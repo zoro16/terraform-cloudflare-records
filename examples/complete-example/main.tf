@@ -6,12 +6,12 @@ data "cloudflare_zone" "this" {
   name = "example.com"
 }
 
-module "records" {
+module "this" {
   source = "../../"
 
   records = [
     {
-      name    = "mail"
+      name    = "testing"
       proxied = false
       ttl     = 60
       type    = "A"
@@ -19,17 +19,12 @@ module "records" {
       zone_id = data.cloudflare_zone.this.id
     },
     {
-      name    = "_25._tcp.mail"
+      name    = "dev"
       proxied = false
       ttl     = 60
-      type    = "TLSA"
+      type    = "A"
+      value   = "10.10.10.10"
       zone_id = data.cloudflare_zone.this.id
-      data = {
-        certificate   = "T8kKkgeLqC5pi5tVfUN0Nf3vJMzb6NDAB4IBwrOHKunmCSNLHqYgrGnCUAN9SulQ"
-        matching_type = 1
-        selector      = 1
-        usage         = 3
-      }
     },
   ]
 }

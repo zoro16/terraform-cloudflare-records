@@ -18,7 +18,7 @@
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_records"></a> [records](#module\_records) | ../../ | n/a |
+| <a name="module_this"></a> [this](#module\_this) | ../../ | n/a |
 
 ## Resources
 
@@ -34,5 +34,7 @@
 
 ## Outputs
 
-No outputs.
+| Name | Description |
+|------|-------------|
+| <a name="output_records"></a> [records](#output\_records) | All the available outputs |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
