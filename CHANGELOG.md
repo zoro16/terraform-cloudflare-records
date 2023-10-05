@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.1](https://github.com/zoro16/terraform-cloudflare-records/compare/v1.1.0...v1.1.1) (2023-10-05)
+
+
+### Bug Fixes
+
+* fixed duplicate output object key issue ([55b6e2e](https://github.com/zoro16/terraform-cloudflare-records/commit/55b6e2e1d8d305a80716b15d63a54200c8da6f0e))
+
 ## [1.1.0](https://github.com/zoro16/terraform-cloudflare-records/compare/v1.0.1...v1.1.0) (2023-10-05)
 
 
