@@ -107,12 +107,27 @@ EOF
       update = optional(string)
     }))
   }))
-  default = []
+
+  default = [
+    {
+      name    = null
+      proxied = null
+      ttl     = null
+      type    = null
+      value   = null
+      zone_id = null
+      allow_overwrite = null
+      priority        = null
+      tags    = null
+      comment = null
+      data = null
+      timeouts = null
+    },
+  ]
 
 
   validation {
     condition     = contains(["A", "AAAA", "CNAME", "MX", "NS", "SOA", "SRV", "PTR", "CAA", "APL", "AFSDB", "DNSKEY", "CDNSKEY", "CERT", "DCHID", "DNAME", "HIP", "IPSECKEY", "LOC", "NAPTR", "NSEC", "RRSIG", "RP", "SSHFP"], var.records[0].type)
-    error_message = "Valid values are."
+    error_message = "Invalid record Type value. Please make sure the enter one of the supported records types [A, AAAA, CAA, CNAME, TXT, SRV, LOC, MX, NS, SPF, CERT, DNSKEY, DS, NAPTR, SMIMEA, SSHFP, TLSA, URI, PTR, HTTPS, SVCB]"
   }
-
 }
