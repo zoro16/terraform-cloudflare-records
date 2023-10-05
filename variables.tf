@@ -110,18 +110,18 @@ EOF
 
   default = [
     {
-      name    = null
-      proxied = null
-      ttl     = null
-      type    = null
-      value   = null
-      zone_id = null
+      name            = null
+      proxied         = null
+      ttl             = null
+      type            = null
+      value           = null
+      zone_id         = null
       allow_overwrite = null
       priority        = null
-      tags    = null
-      comment = null
-      data = null
-      timeouts = null
+      tags            = null
+      comment         = null
+      data            = null
+      timeouts        = null
     },
   ]
 
