@@ -16,7 +16,7 @@ Records output:
 EOF
   value = {
     for k, v in cloudflare_record.this :
-    v.name => {
+    format("%s_[%s]", v.name, k) => {
       "id"          = v.id
       "created_on"  = v.created_on
       "modified_on" = v.modified_on
