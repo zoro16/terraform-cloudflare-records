@@ -2,47 +2,47 @@ variable "records" {
   description = <<EOF
 List of Maps of the records.
 
-name
+`name`
    The name of the record.
    Modifying this attribute will force creation of a new resource.
 
-type
+`type`
     The type of the record. Available values: [A, AAAA, CAA, CNAME, TXT, SRV, LOC, MX, NS,
     SPF, CERT, DNSKEY, DS, NAPTR, SMIMEA, SSHFP, TLSA, URI, PTR, HTTPS, SVCB].
     Modifying this attribute will force creation of a new resource.
 
-zone_id
+`zone_id`
      The zone identifier to target for the resource.
      Modifying this attribute will force creation of a new resource.
 
-allow_overwrite
+`allow_overwrite`
     Allow creation of this record in Terraform to overwrite an existing record, if any.
     This does not affect the ability to update the record in Terraform and does not prevent
     other resources within Terraform or manual changes outside Terraform from overwriting this record.
     This configuration is not recommended for most environments. Defaults to false.
 
-comment
+`comment`
      Comments or notes about the DNS record. This field has no effect on DNS responses.
 
-priority
+`priority`
     The priority of the record.
 
-proxied
+`proxied`
     Whether the record gets Cloudflare's origin protection.
 
-tags
+`tags`
     Custom tags for the DNS record.
 
-ttl
+`ttl`
     The TTL of the record.
 
-value
+`value`
     The value of the record. Conflicts with data.
 
-timeouts
+`timeouts`
     (Block, Optional) The Timeout settings.
 
-data
+`data`
      (Block List, Max: 1) Map of attributes that constitute the record value. Conflicts with value.
 
 EOF
