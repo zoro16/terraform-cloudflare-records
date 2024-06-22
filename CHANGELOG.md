@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.2](https://github.com/zoro16/terraform-cloudflare-records/compare/v1.1.1...v1.1.2) (2024-06-22)
+
+
+### Bug Fixes
+
+* remove metadata.source from output ([cdab72a](https://github.com/zoro16/terraform-cloudflare-records/commit/cdab72ac39f7fca75d046c132da20c75d45c0d6e))
+
 ## [1.1.1](https://github.com/zoro16/terraform-cloudflare-records/compare/v1.1.0...v1.1.1) (2023-10-05)
 
 
