@@ -9,7 +9,6 @@ Records output:
         ** `auto_added` (Boolean)
         ** `managed_by_apps` (Boolean)
         ** `managed_by_argo_tunnel` (Boolean)
-        ** `source` (String)
 
     * `modified_on` (String) The RFC3339 timestamp of when the record was last modified.
     * `proxiable` (Boolean) Shows whether this record can be proxied.
@@ -26,7 +25,6 @@ EOF
         "auto_added"             = tobool(v.metadata.auto_added)
         "managed_by_apps"        = tobool(v.metadata.managed_by_apps)
         "managed_by_argo_tunnel" = tobool(v.metadata.managed_by_argo_tunnel)
-        "source"                 = v.metadata.source
       }
     }
 
